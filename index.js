@@ -1,12 +1,12 @@
 var authConfig = {
-    "siteName": "GoIndex", // 网站名称
-    "root_pass": "index",  // 根目录密码，优先于.password
-    "version" : "1.0.6", // 程序版本
-    "theme" : "material", // material  classic 
+    "siteName": "GoIndex", // site name
+    "root_pass": "index",  // root password, takes precedence over .password
+    "version" : "master", // program version
+    "theme" : "material", // material  classic
     "client_id": "202264815644.apps.googleusercontent.com",
     "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
-    "refresh_token": "", // 授权 token
-    "root": "root" // 根目录ID
+    "refresh_token": "", // authorization token
+    "root": "root" // root directory ID
 };
 
 var gd;
@@ -18,7 +18,7 @@ var html = `
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
   <title>${authConfig.siteName}</title>
-  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/donwa/goindex@${authConfig.version}/themes/${authConfig.theme}/app.js"></script>
+  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/TechExhibeo/goindex@${authConfig.version}/themes/${authConfig.theme}/app.js"></script>
 </head>
 <body>
 </body>
@@ -137,7 +137,7 @@ class googleDrive {
       return obj.files[0];
     }
 
-    // 通过reqeust cache 来缓存
+    // Cache via reqeust cache
     async list(path){
       if (gd.cache == undefined) {
         gd.cache = {};

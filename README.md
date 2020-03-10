@@ -19,7 +19,8 @@ classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
 5.Download index.js in https://github.com/donwa/goindex and fill in root and refresh_token  
 6.Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)
 
-## Quick Deployment  
+## Quick Deployment 
+#### (only for chinese version and won't work for this english repo)
 1.Open https://installen.gd.workers.dev/  
 2.Auth and get the code  
 3.Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)  
